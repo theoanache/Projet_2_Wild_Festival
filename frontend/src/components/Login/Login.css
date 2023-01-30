@@ -1,0 +1,33 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginPage__loader {
+  margin-top: 3em;
+}
+
+.login {
+  background: var(--fontsecondary);
+  width: 90vmin;
+  height: auto;
+  border-radius: 1em;
+  margin: 0 auto;
+}
+
+.logoAccueil {
+  width: 45vmin;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 18vmin;
+}
+
+.accueil {
+  width: 100vw;
+  height: 40vmin;
+  background: url(./assets/page-accueil-violet.png);
+  background-size: cover 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}

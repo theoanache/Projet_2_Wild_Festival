@@ -1,0 +1,17 @@
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 50vmin;
+}
+
+.each-slide-effect span {
+  padding: 2vw;
+  font-size: 2em;
+  background: #efefef;
+  text-align: center;
+}
+#slideMobile {
+  max-width: 100vmin;
+}

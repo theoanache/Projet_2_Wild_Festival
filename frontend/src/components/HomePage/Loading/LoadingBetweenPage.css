@@ -1,0 +1,37 @@
+.App-logo2 {
+  width: 20vw;
+  height: auto;
+}
+
+.loading2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo2 {
+    animation: App-logo-spin infinite 1s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .App-logo2 {
+    width: 8vw;
+  }
+
+  .logo2 {
+    width: 8vw;
+  }
+}

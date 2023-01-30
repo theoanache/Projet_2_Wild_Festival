@@ -1,0 +1,21 @@
+.festival-page {
+  padding-top: 10vmin;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vmin;
+}
+.border-festival {
+  width: 100%;
+  height: 30vmin;
+  position: absolute;
+  z-index: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .border-festival {
+    height: 45vmin;
+  }
+}

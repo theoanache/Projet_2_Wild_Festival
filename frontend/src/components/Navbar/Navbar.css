@@ -1,0 +1,127 @@
+.navbar {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  background-color: #000000;
+  height: 10vmin;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar .logoburger {
+  height: 5vh;
+}
+
+.left-side,
+.right-side,
+.navbar ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.navbar .left-side {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar ul {
+  align-items: flex-end;
+  gap: 2vw;
+  list-style-type: none;
+  padding: 2px;
+  margin: 0.5vw;
+}
+
+.navbar .logo {
+  cursor: pointer;
+  width: auto;
+  height: 8vmin;
+  margin: 0.5vw;
+}
+
+.navbar .right-side {
+  gap: 2vw;
+  font-size: 0.6em;
+  margin-right: 2vw;
+}
+
+.navbar .right-side img {
+  width: auto;
+  height: 2.7vw;
+}
+
+.navbar a {
+  color: unset;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.left-side a {
+  font-size: 2vmin;
+}
+
+.right-side a {
+  font-size: 1.7vmin;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .burger-display {
+    display: none;
+  }
+  .navbar .right-side img {
+    height: 5vw;
+  }
+  .navbar .right-side {
+    font-size: 0.5em;
+  }
+  .navbar .left-side .burger-menu {
+    display: block;
+    font-size: 26px;
+    margin: 1vw;
+  }
+}
+
+.burger-menu {
+  display: none;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-content a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.userName {
+  font-size: 1.7vmin;
+}
+
+.userName::after {
+  content: " ";
+  display: inline-flex;
+  position: absolute;
+  top: 5px;
+  align-items: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background: rgb(60, 232, 12);
+}

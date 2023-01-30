@@ -1,0 +1,241 @@
+.formlogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formlogin {
+  color: var(--fontprimary);
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+}
+
+.formlogin h2 {
+  font-size: 3.5vmin;
+  margin-bottom: 4vmin;
+}
+
+.formlogin h2::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 3px;
+  background: var(--primary);
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.formlogin h2:hover::after {
+  transform: scale(1);
+}
+
+.formlogin__first {
+  display: flex;
+  flex-direction: column;
+}
+
+.formlogin__inputbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.formlogin__inputbox p {
+  margin: 0;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.formlogin__inputbox ion-icon {
+  font-size: 3.5vmin;
+  position: absolute;
+  top: 0.9vmin;
+  right: 20px;
+}
+
+.icon {
+  color: black;
+}
+
+.initial-color {
+  color: var(--primary);
+}
+
+.success-color {
+  color: rgb(60, 232, 12);
+}
+
+.error-color {
+  color: red;
+}
+
+.formlogin__inputbox input {
+  width: 85vmin;
+  padding: 1vmin;
+  border: 0.4vmin solid rgba(149, 132, 132, 0.727);
+  background: #ffffff;
+  border-radius: 1em;
+  outline: none;
+  color: rgb(9, 9, 9);
+  font-size: 2vmin;
+  transition: 0.5s;
+  padding-left: 1em;
+  margin-bottom: 4vmin;
+}
+
+.formlogin__checkbox {
+  margin-left: 2vmin;
+}
+
+.formlogin__checkbox label {
+  font-size: 2vmin;
+}
+
+.formlogin__inputbox span {
+  position: absolute;
+  left: 1em;
+  top: 1.4vmin;
+  pointer-events: none;
+  font-size: 2vmin;
+  color: rgba(5, 5, 5, 0.443);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.formlogin__inputbox input:valid ~ span,
+.formlogin__inputbox input:focus ~ span {
+  color: rgb(255, 255, 255);
+  transform: translateX(1.4em) translateY(-3.6vmin);
+  font-size: 1.7vmin;
+  padding: 0.1em 2em;
+  background: var(--primary);
+  border-radius: 2em;
+  letter-spacing: 0.5em;
+  font-weight: 700;
+}
+
+.formlogin__inputbox input:valid,
+.formlogin__inputbox input:focus {
+  border: 0.4vmin solid var(--primary);
+}
+
+.button {
+  display: flex;
+  margin: auto;
+  background: var(--primary);
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: 0.7em;
+  color: var(--fontprimary);
+  font-size: 2.5vmin;
+  margin-top: 5vmin;
+  margin-bottom: 5vmin;
+  transition: 0.15s;
+  cursor: default;
+}
+
+.buutonRight {
+  transition: 0.15s;
+  transform: translateX(200px);
+}
+
+.button:hover {
+  transform: scale(0.96);
+}
+
+.button:active {
+  transform: scale(0.92);
+}
+
+.formlogin__link {
+  display: flex;
+  justify-content: space-between;
+  width: 85vmin;
+  margin-bottom: 2vmin;
+}
+
+.formlogin__link a {
+  text-decoration: none;
+  color: var(--fontprimary);
+  font-size: 2.5vmin;
+}
+
+.formlogin__checkbox label {
+  margin-left: 0.5em;
+}
+
+.formlogin__checkbox input {
+  width: 2.5vmin;
+  height: 2.5vmin;
+}
+
+.formlogin__link a::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 2px;
+  background: var(--primary);
+}
+
+.formLogin__before {
+  margin-bottom: 2em;
+}
+
+.formlogin__icon {
+  width: 90%;
+  position: relative;
+  top: 6vmin;
+}
+
+.formlogin__icon ion-icon {
+  font-size: 6vmin;
+  fill: var(--primary);
+}
+
+.formlogin__icon__connexion {
+  color: transparent;
+}
+
+.formlogin__icon__connexion ion-icon {
+  font-size: 2em;
+}
+
+.buttonBefore {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modalPwd {
+  margin-top: -3.6vmin;
+  margin-bottom: 1em;
+}
+
+.modalPwd p {
+  margin: 0;
+  margin-left: 0.5em;
+  font-size: 2vmin;
+}
+
+.modalPwd ion-icon {
+  font-size: 3vmin;
+}
+
+.modalPwd div {
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.valid {
+  color: rgb(60, 232, 12);
+}
+
+.procedure {
+  width: 60vmin;
+  text-align: center;
+  margin-bottom: 1vmin;
+  font-size: 2.2vmin;
+}

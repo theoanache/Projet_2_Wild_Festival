@@ -1,0 +1,145 @@
+.ContactUs {
+  color: var(--fontprimary);
+  text-decoration: none;
+}
+
+.footer {
+  padding-top: 10vh;
+  height: auto;
+  padding-bottom: 0;
+}
+
+.footer-img {
+  position: absolute;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.footer-yellow {
+  z-index: 1;
+  height: 37%;
+  width: 50%;
+  margin-top: 6vh;
+}
+
+.footer-blue {
+  z-index: 2;
+  height: 45%;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  z-index: 99;
+  padding-right: 9vw;
+  padding-top: 8vh;
+  height: 100%;
+  gap: 4vh;
+}
+
+.footer-content .wild-festival-logo {
+  width: 48vh;
+  height: auto;
+  padding-top: 1vh;
+}
+
+.footer-content .footer-infos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 25vw;
+}
+
+.footer-social-network {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2.5vw;
+  align-items: center;
+}
+
+.footer-social-network img {
+  width: 8vh;
+}
+
+.footer-infos-legales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 2vh;
+}
+
+.footer-infos-legales h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.footer-infos-legales-lien-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-infos-legales-lien-page a {
+  font-size: 11px;
+  color: #ffffff;
+  padding-top: 1vh;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-yellow {
+    height: 25%;
+    width: 86%;
+    margin-top: 7vh;
+  }
+  .footer-social-network img {
+    width: 4.5vh;
+  }
+
+  .footer-blue {
+    height: 34%;
+    width: 100%;
+  }
+
+  .footer-content {
+    padding-right: 6vw;
+    gap: 2vh;
+  }
+
+  .footer-content .wild-festival-logo {
+    width: 28vh;
+  }
+
+  .footer-content .footer-infos {
+    align-items: center;
+  }
+
+  .footer-infos-legales {
+    padding-top: 4vh;
+  }
+
+  .footer-infos-legales h2 {
+    font-size: 13px;
+  }
+
+  .footer-infos-legales-lien-page a {
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .footer-social-network {
+    margin-left: 3vw;
+  }
+}

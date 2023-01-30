@@ -1,0 +1,70 @@
+.HomePageBackground {
+  background: url(../assets/page-accueil-violet.png);
+  height: 43vmin;
+  background-size: cover 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.HomePageLogo {
+  width: 50vmin;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 16vmin;
+}
+
+.artistTextP {
+  color: var(--fontprimary);
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+.artistText {
+  font-size: small;
+  margin-bottom: 3%;
+  text-align: center;
+  color: var(--fontprimary);
+}
+
+.scrollingArtist a {
+  text-decoration: none;
+}
+
+.scrollingArtist {
+  gap: 10px;
+  padding: 1%;
+  display: flex;
+  overflow-x: auto;
+  background: var(--fontsecondary);
+}
+
+.scrollingArtist::-webkit-scrollbar {
+  display: none;
+}
+
+.artist {
+  border-radius: 15px;
+  min-width: 35vmin;
+  height: 25vmin;
+}
+
+.globalComponent {
+  margin-top: 10%;
+}
+
+.containerArtist {
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .scrollingArtist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6vmin;
+    margin-top: 10vmin;
+  }
+  .artistText {
+    font-size: medium;
+  }
+}

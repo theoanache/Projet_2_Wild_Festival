@@ -1,0 +1,23 @@
+.festival-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6vmin;
+  margin-top: 6vmin;
+}
+
+.festival-text {
+  font-size: clamp(0.65rem, 0.3722rem + 1.4815vw, 2.15rem);
+  color: var(--fontprimary);
+  margin-top: 12vmin;
+  margin-bottom: 2vh;
+  margin-left: 2.5vw;
+}
+
+.no-date {
+  font-size: clamp(0.5rem, 0.287rem + 1.1358vw, 1.65rem);
+  color: var(--fontprimary);
+  margin-top: 5vh;
+  margin-left: 3.5vw;
+  margin-bottom: 15vh;
+}

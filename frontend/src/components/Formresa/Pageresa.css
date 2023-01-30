@@ -1,0 +1,20 @@
+.form h1,
+.infoResa h1 {
+  color: var(--fontprimary);
+  font-size: 1.5em;
+  display: inline;
+  margin: 0;
+}
+
+.pageResa {
+  margin-bottom: 5em;
+}
+
+.accueil {
+  width: 100vw;
+  height: 40vmin;
+  background: url(./assets/page-accueil-violet.png);
+  background-size: cover 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}

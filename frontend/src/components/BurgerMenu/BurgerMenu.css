@@ -1,0 +1,153 @@
+.burger-menu-toggle {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+
+  -webkit-animation: burger-menu-toggle 0.5s forwards;
+  animation: burger-menu-toggle 0.5s forwards;
+}
+
+@-webkit-keyframes burger-menu-toggle {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes burger-menu-toggle {
+  100% {
+    left: 0;
+  }
+}
+
+.burger-menu-toggle .logo {
+  width: 28vh;
+  height: auto;
+  margin: 0.5vw;
+  position: absolute;
+  display: flex;
+  justify-content: bottom;
+}
+
+.logo-violet {
+  height: 28vh;
+  width: 95vw;
+}
+
+.burger-menu-toggle .burger-background {
+  display: flex;
+  position: absolute;
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+
+.burger-menu-toggle .burger-left-side {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #424242;
+  width: 80%;
+  height: 100%;
+}
+
+.burger-menu-toggle .burger-left-side .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+}
+
+.burger-menu-toggle .burger-right-side {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #554994;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 10vh;
+}
+
+.burger-menu-toggle .burger-right-side .close-burger-menu {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.burger-menu-toggle .burger-left-side .menu li {
+  width: 94%;
+  height: 6vh;
+  line-height: 5vh;
+  list-style-type: none;
+  border-bottom: #ffffff solid 2px;
+  font-size: 13px;
+}
+
+.burger-menu-toggle .burger-left-side .menu li a {
+  margin-left: 5vw;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container .logobas {
+  height: 36.5vh;
+  width: 35vw;
+}
+
+.burger-menu-toggle .infos {
+  background-image: url("/src/assets/bmbas.png");
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 60vh;
+  padding-top: 13vh;
+  padding-left: 2px;
+}
+
+.infos .twitter,
+.infos .facebook,
+.infos .instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  width: 15vw;
+  cursor: pointer;
+}
+
+.infos .burger-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 12vh 2vh 7vh 1vh;
+}
+
+.infos .burger-footer a {
+  color: #ffffff;
+  height: 2vh;
+  font-size: 5vmin;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.infos .burger-footer .logo-event {
+  width: auto;
+  height: 25vw;
+  display: flex;
+  padding-top: 10px;
+}

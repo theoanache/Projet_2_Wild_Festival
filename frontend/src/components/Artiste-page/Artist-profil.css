@@ -1,0 +1,57 @@
+.artist-profil {
+  color: var(--fontprimary);
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4vmin;
+  padding-top: 3.5vmin;
+}
+
+.artist-description {
+  margin-right: 3.5vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.artist-title {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 0.6815rem + 2.7654vw, 4rem);
+}
+
+.artist-description p {
+  text-align: right;
+  padding: 0.1vmin;
+  font-weight: bold;
+  font-size: clamp(0.65rem, 0.3722rem + 1.4815vw, 2.15rem);
+}
+
+.youtube_logo {
+  margin-top: 1vmin;
+  width: 5vmin;
+  height: auto;
+}
+
+.artist-image {
+  border-radius: 3vmin;
+  max-width: 30vmin;
+  height: auto;
+  z-index: 2;
+}
+
+@media screen and (min-width: 600px) {
+  .artist-profil {
+    margin-right: 6vmin;
+    padding-top: 5vmin;
+  }
+
+  .artist-description {
+    margin-right: 6vmin;
+  }
+
+  .youtube_logo {
+    margin-top: 2.5vmin;
+    width: 7vmin;
+  }
+}

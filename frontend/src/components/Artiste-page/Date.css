@@ -1,0 +1,81 @@
+.complete-date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 28vh;
+  width: 40vmin;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4vmin;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  border-right: none;
+}
+
+.festival-link {
+  text-decoration: none;
+  color: var(--fontprimary);
+  margin-bottom: 3vmin;
+  font-size: clamp(0.65rem, 0.5296rem + 0.642vw, 1.3rem);
+}
+
+.festival-link::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 2px;
+  background: var(--secondary);
+}
+
+.festival-logo {
+  width: 25vmin;
+  height: 25vmin;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 3vmin;
+  background: white;
+}
+
+.place-festival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.place-festival h3 {
+  font-size: clamp(0.65rem, 0.4982rem + 0.8095vw, 1.5rem);
+  color: var(--fontprimary);
+  padding-top: 3.5vmin;
+  padding-bottom: 1vmin;
+}
+
+.place-festival p {
+  font-size: clamp(0.65rem, 0.5296rem + 0.642vw, 1.3rem);
+  color: var(--fontprimary);
+  margin-bottom: 2vmin;
+}
+
+.place-festival h5 {
+  font-size: clamp(0.5rem, 0.3889rem + 0.5926vw, 1.1rem);
+  color: var(--fontprimary);
+  padding-left: 1vmin;
+  margin-bottom: 1vmin;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 600px) {
+  .complete-date {
+    min-width: 35vmin;
+  }
+
+  .place-festival h3 {
+    padding-top: 2.5vmin;
+  }
+
+  .festival-link::after {
+    height: 3px;
+  }
+}

@@ -1,0 +1,100 @@
+.HomePageBackground {
+  background: url(../assets/page-accueil-violet.png);
+  height: auto;
+  width: 100vw;
+  height: 40vmin;
+  background-size: cover 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.HomePageLogo {
+  width: 45vmin;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 18vmin;
+}
+
+.scrollingArtist a {
+  text-decoration: none;
+}
+.artistTextP {
+  color: var(--fontprimary);
+  margin-bottom: 2%;
+  margin-left: 2%;
+  font-size: 4vmin;
+}
+
+.artistText {
+  margin-bottom: 3%;
+  text-align: center;
+  color: var(--fontprimary);
+  font-size: 2.5vmin;
+  width: 100%;
+}
+
+.scrollingArtist {
+  gap: 10px;
+  padding: 1%;
+  display: flex;
+  overflow-x: auto;
+  border-radius: 15px;
+}
+
+.scrollingArtist::-webkit-scrollbar {
+  display: none;
+}
+
+.artist {
+  border-radius: 15px;
+  min-width: 170px;
+  object-fit: fill;
+  height: 30vmin;
+  line-height: 150px;
+  text-align: center;
+  width: 100%;
+}
+
+.containerArtist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45vmin;
+}
+
+.globalComponent {
+  margin-top: 10%;
+}
+
+@media screen and (min-width: 600px) {
+  .globalComponent {
+    margin: 0 auto;
+    width: 80vw;
+  }
+  .artistText {
+    padding-top: 3%;
+    margin-bottom: 1.5%;
+  }
+  .scrollingArtist {
+    gap: 33px;
+    padding: 1%;
+    display: flex;
+    background: var(--fontsecondary);
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .containerArtist {
+    width: 25vmin;
+  }
+  .artist {
+    border-radius: 15px;
+    object-fit: fill;
+    line-height: 150px;
+    text-align: center;
+    height: 20vmin;
+    width: 28vmin;
+  }
+}

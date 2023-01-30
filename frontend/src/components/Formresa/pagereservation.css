@@ -1,0 +1,173 @@
+.infoResa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.infoResa img {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 1em;
+}
+
+hr {
+  width: 80%;
+  margin-top: 0.8em;
+}
+
+.infoFestival {
+  width: 80%;
+  color: var(--fontprimary);
+  display: flex;
+  flex-direction: column;
+}
+
+.infoFestival h4 {
+  margin: 0;
+}
+
+.infoFestival p,
+.tickets p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.tickets {
+  width: 80%;
+  color: var(--fontprimary);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tickets h4 {
+  margin: 0;
+  margin-top: 1em;
+}
+
+.tickets p {
+  margin: 0;
+  padding: 0;
+}
+
+.numberTickets {
+  display: flex;
+  margin-top: 1em;
+}
+
+.numberTickets p {
+  margin: 0;
+  margin-left: 0.6em;
+}
+
+.numberTickets ion-icon {
+  font-size: 0.9em;
+  padding-top: 0.2em;
+}
+
+.totalTickets {
+  color: red;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5em;
+  margin-top: 1.5em;
+}
+
+.button-paiement {
+  display: flex;
+  margin: auto;
+  background: var(--primary);
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: 0.7em;
+  color: var(--fontprimary);
+  font-size: 1em;
+  margin-top: 2em;
+}
+
+.button-paiement:hover {
+  transform: scale(0.96);
+}
+
+.button-paiement:active {
+  transform: scale(0.92);
+}
+
+.form h1,
+.infoResa h1 {
+  color: var(--fontprimary);
+  font-size: 1.5em;
+  display: inline;
+  margin: 0;
+}
+
+.form h1::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 2px;
+  background: var(--fontprimary);
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.form h1:hover::after {
+  transform: scale(1);
+}
+
+.inputBox {
+  position: relative;
+  margin: 1em;
+}
+
+.inputBox input {
+  width: 50vw;
+  padding: 0.5em;
+  padding-left: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.443);
+  background: #000000;
+  border-radius: 0.7em;
+  outline: none;
+  color: #fff;
+  font-size: 0.8em;
+  transition: 0.5s;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 1em;
+  top: 0.5em;
+  pointer-events: none;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.443);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: rgb(255, 255, 255);
+  transform: translateX(1.4em) translateY(-1.1em);
+  font-size: 0.6em;
+  padding: 0.1em 2em;
+  background: #145e8b;
+  border-radius: 2em;
+  letter-spacing: 0.5em;
+  font-weight: 700;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid #145e8b;
+}

@@ -1,0 +1,90 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5em;
+  margin-top: 1.5em;
+}
+
+.button-paiement {
+  display: flex;
+  margin: auto;
+  background: var(--primary);
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: 0.7em;
+  color: var(--fontprimary);
+  font-size: 1em;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.button-paiement:hover {
+  transform: scale(0.96);
+}
+
+.button-paiement:active {
+  transform: scale(0.92);
+}
+
+.form h1::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 2px;
+  background: var(--fontprimary);
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.form h1:hover::after {
+  transform: scale(1);
+}
+
+.inputBox {
+  position: relative;
+  margin-top: 1em;
+}
+
+.inputBox input {
+  width: 70vw;
+  padding: 0.6em;
+  border: 3px solid rgba(149, 132, 132, 0.727);
+  background: #ffffff;
+  border-radius: 0.7em;
+  outline: none;
+  color: rgb(9, 9, 9);
+  font-size: 0.9em;
+  transition: 0.5s;
+  margin-bottom: 1.5em;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  pointer-events: none;
+  font-size: 0.8em;
+  color: rgba(5, 5, 5, 0.443);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: rgb(255, 255, 255);
+  transform: translateX(1.4em) translateY(-1.5em);
+  font-size: 0.7em;
+  padding: 0.1em 2em;
+  background: var(--primary);
+  border-radius: 2em;
+  letter-spacing: 0.5em;
+  font-weight: 700;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 3px solid var(--primary);
+}

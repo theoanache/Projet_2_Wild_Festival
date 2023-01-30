@@ -1,0 +1,139 @@
+.pageContact {
+  width: 100vw;
+  height: 40vmin;
+  background: url(./assets/page-accueil-violet.png);
+  background-size: cover 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.form__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7vh;
+}
+
+.contact {
+  background: var(--fontsecondary);
+  width: 90vmin;
+  height: auto;
+  border-radius: 1em;
+  margin: 0 auto;
+  margin-top: 3vmin;
+  padding-top: 2vh;
+}
+
+.logoContact {
+  width: 45vmin;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 18vmin;
+}
+
+.inputBox__contact {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputBox__contact input {
+  width: 85vmin;
+  padding: 1vmin;
+  border: 0.4vmin solid rgba(149, 132, 132, 0.727);
+  background: #ffffff;
+  border-radius: 1em;
+  outline: none;
+  color: rgb(9, 9, 9);
+  font-size: 2vmin;
+  transition: 0.5s;
+  padding-left: 1em;
+  margin-bottom: 5vmin;
+}
+
+.inputBox__contact span {
+  position: absolute;
+  left: 1em;
+  top: 1.4vmin;
+  pointer-events: none;
+  font-size: 2vmin;
+  color: rgba(5, 5, 5, 0.443);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox__contact ion-icon {
+  font-size: 3.5vmin;
+  position: absolute;
+  top: 0.9vmin;
+  right: 20px;
+}
+
+.inputBox__contact input:valid ~ span,
+.inputBox__contact input:focus ~ span {
+  color: rgb(255, 255, 255);
+  transform: translateX(1.4em) translateY(-3.6vmin);
+  font-size: 1.7vmin;
+  padding: 0.1em 2em;
+  background: var(--primary);
+  border-radius: 2em;
+  letter-spacing: 0.5em;
+  font-weight: 700;
+}
+
+.inputBox__contact input:valid,
+.inputBox__contact input:focus {
+  border: 0.4vmin solid var(--primary);
+}
+
+.form__title {
+  margin-top: 3vmin;
+}
+
+.form__title h2 {
+  font-size: 3.5vmin;
+  margin-bottom: 4vmin;
+  color: var(--fontprimary);
+}
+
+.form__title h2::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 3px;
+  background: var(--primary);
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.form__title h2:hover::after {
+  transform: scale(1);
+}
+
+.inputBox__contact:nth-child(3) input {
+  height: 15vmin;
+  padding-bottom: 10vmin;
+}
+
+.buttonContact {
+  display: flex;
+  margin: auto;
+  background: var(--primary);
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: 0.7em;
+  color: var(--fontprimary);
+  font-size: 2.5vmin;
+  margin-top: 2vmin;
+  margin-bottom: 5vmin;
+  cursor: default;
+}
+
+.buttonContact:hover {
+  transform: scale(0.96);
+}
+
+.buttonContact:active {
+  transform: scale(0.92);
+}

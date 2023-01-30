@@ -1,0 +1,83 @@
+.festival-profil {
+  color: var(--fontprimary);
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4vmin;
+  padding-top: 3.5vmin;
+}
+
+.festival-description {
+  margin-right: 3.5vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.festival-title {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 0.6815rem + 2.7654vw, 4rem);
+}
+
+.festival-description p {
+  text-align: right;
+  padding: 0.1vmin;
+  font-size: clamp(0.65rem, 0.3722rem + 1.4815vw, 2.15rem);
+  font-weight: bold;
+}
+
+.youtube_logo {
+  margin-top: 1vmin;
+  width: 5vmin;
+  height: auto;
+}
+
+.festival-image {
+  border-radius: 3vmin;
+  width: 20vmin;
+  height: auto;
+  z-index: 2;
+}
+
+.buy-button {
+  background: var(--thirdy);
+  border-radius: 2vmin;
+  border: none;
+  border-bottom: 3px solid var(--thirdy);
+  text-decoration: none;
+  color: var(--fontprimary);
+  font-size: clamp(0.65rem, 0.3722rem + 1.4815vw, 2rem);
+  font-weight: bold;
+  padding: 2vmin;
+  cursor: pointer;
+  margin-top: 5vmin;
+}
+
+@media screen and (min-width: 600px) {
+  .festival-profil {
+    margin-right: 6vmin;
+    padding-top: 5vmin;
+  }
+
+  .festival-description {
+    margin-right: 6vmin;
+  }
+
+  .youtube_logo {
+    margin-top: 2.5vmin;
+    width: 7vmin;
+  }
+
+  .festival-image {
+    width: 28vmin;
+  }
+
+  .buy-button:hover {
+    transition-duration: 0.5s;
+    background: none;
+    border-radius: 0;
+    padding-bottom: 2vmin;
+    border-radius: 2vmin;
+  }
+}

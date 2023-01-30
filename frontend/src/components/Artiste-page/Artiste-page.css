@@ -1,0 +1,9 @@
+.artiste-page {
+  margin-top: 10vh;
+}
+
+.bordure-artiste {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}

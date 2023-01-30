@@ -1,0 +1,28 @@
+.ListArtist {
+  padding-top: 3vh;
+}
+
+.artist-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6vmin;
+  margin-top: 4vmin;
+}
+
+.artist-text {
+  font-size: clamp(0.65rem, 0.3722rem + 1.4815vw, 2.15rem);
+  color: var(--fontprimary);
+  margin-left: 5vmin;
+}
+
+@media screen and (min-width: 600px) {
+  .artist-text {
+    margin-left: 10vmin;
+    margin-top: 6vmin;
+  }
+
+  .artist-container {
+    gap: 4vmin;
+  }
+}

@@ -1,0 +1,65 @@
+.complete-artist {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vmin;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4vmin;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  border-right: none;
+  text-decoration: none;
+}
+.artist-link {
+  text-decoration: none;
+  color: var(--fontprimary);
+  margin-bottom: 5vmin;
+  font-size: clamp(0.65rem, 0.5296rem + 0.642vw, 1.3rem);
+}
+
+.artist-link::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 2px;
+  background: var(--thirdy);
+}
+.artist-image-fest {
+  width: 25vmin;
+  height: 25vmin;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
+  background: white;
+}
+
+.line-up {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.artist-name {
+  font-size: clamp(0.65rem, 0.5296rem + 0.642vw, 1.3rem);
+  color: var(--fontprimary);
+  margin-top: 2vmin;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  .complete-artist {
+    width: 32vmin;
+  }
+
+  .artist-image-fest {
+    margin-top: 2vmin;
+  }
+
+  .artist-link::after {
+    height: 3px;
+  }
+}
